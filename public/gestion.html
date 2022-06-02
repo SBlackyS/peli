@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/gestion-header.css">
+    <link rel="stylesheet" href="./styles/gestion-body.css">
+
+    <title>Gestion</title>
+</head>
+<body>
+    <div class="modal-formulario" id="modalContainer">
+        <div class="sub-modal-formulario">
+            <div class="formulario-upload">
+                <p>Nueva Película</p> <button class="close-modal" id="close-modal">X</button>
+                <form action="">
+                    <input type="text" placeholder="Nombre" id="nombreRegistro">
+                    <input type="text" placeholder="Protaginista" id="protaRegistro">
+                    <input type="number" placeholder="Año" id="anioRegistro">
+                    <textarea id="sinopsisRegistro">Sinopsis</textarea> 
+                    
+                    <button id="btnGuardar" type="reset">Guardar</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="modal-edit" id="modalContainerEdit">
+        <div class="sub-modal-formulario">
+            <div class="formulario-upload">
+                <p>Editar Película</p> <button class="close-modal" id="close-modal-edit">X</button>
+                <form action="">
+                    <input type="text" placeholder="Nombre" id="nombreEdit">
+                    <input type="text" placeholder="Protaginista" id="protaEdit">
+                    <input type="number" placeholder="Año" id="anioEdit">
+                    <textarea id="sinopsisEdit"></textarea> 
+                    
+                    <button id="btnGuardarEdit" type="button">Guardar</button>
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container-Padre">
+        <div class="container-header">
+            <div class="title-container-header"><h1>WenSe - Gestion</h1></div>
+            <div>
+                <p class="sub-category">Choose Your Category</p>
+                <p class="category">Anime</p>
+                <p class="category">Series</p>
+                <p class="category">Películas</p>
+                <p class="category" id="newMovie">+</p>
+            </div>
+        </div>
+        
+        <div class="container-body" id="container-body">
+            <div class="peliculas" id="peliculas">
+                <p>PELICULAS</p>
+            </div>
+            <div class="anime">
+                <p>ANIMES</p>
+            </div>
+            <div class="series">
+                <P>SERIES</P>
+            </div>
+        </div>
+        <div class="container-footer">  </div>
+    </div>
+
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/mostrar.js"></script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pelis WenSe</title>
+    <link rel="stylesheet" href="./styles/index-header.css">
+    <link rel="stylesheet" href="./styles/index-body.css">
+    <link rel="stylesheet" href="./styles/index-footer.css">
+</head>
+<body>
+    <div class="container-Padre">
+        <div class="container-header">
+            <div class="sub-container-header">
+                <div class="title"><h1>WenSe - Pelis</h1></div>
+                <div class="navigation-menu">
+                    <div class="son-navigation-menu son-navigation-menu-botones"><h4>Inicio</h4></div>
+                    <div class="son-navigation-menu son-navigation-menu-botones" onclick="window.location.href='./gestion.html'"><h4>Gestion</H4></div>
+                    <div class="son-navigation-menu son-navigation-menu-botones"><h4>Recién <br> Agregados</h4></div>
+                    <div class="son-navigation-menu">
+                        <!-- <h4>Buscador</h4> -->
+                        <form action="">
+                            <input id="find" type="text" placeholder="Buscar">
+                            <button type="reset"><p>BTN</p></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-body">
+            <div class="container-box">
+                <div class="title-container-box">
+                    <p class="son-title-container-box">Buscador</p>
+                    <p class="ver-mas-title-container-box">Ver más</p>
+                </div>
+                <div class="son-container-box" id="buscado">
+                </div>
+            </div>
+            <div class="container-box">
+                <div class="title-container-box">
+                    <p class="son-title-container-box">Películas</p>
+                    <p class="ver-mas-title-container-box">Ver más</p>
+                </div>
+                <div class="son-container-box" id="peliculas2">
+                </div>
+            </div>
+            <div class="container-box">
+                <div class="title-container-box">
+                    <p class="son-title-container-box">Animé</p>
+                    <p class="ver-mas-title-container-box">Ver más</p>
+                </div>
+                <div class="son-container-box">
+                </div>
+            </div>
+        </div>
+        <div class="container-footer">
+            <div class="son-container-footer">
+                <p>INICIO</p>
+                <p>PETICIONES</p>
+                <p>FAQ</p>
+            </div>
+        </div>
+    </div>
+    <script src="./socket.io/socket.io.js"></script>
+    <script src="./js/mostrar.js"></script>
+    <script src="./js/find.js"></script>
+</body>
+</html>
